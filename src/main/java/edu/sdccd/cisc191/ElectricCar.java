@@ -1,8 +1,8 @@
 package edu.sdccd.cisc191;
 
-public class ElectricCar extends Car {
+public class ElectricCar extends Car implements Chargeable{
 
-    private int batteryCharge = 0;
+    int batteryCharge = 0;
 
     public ElectricCar(String manufacturerName, int numMiles, int price, int numSeats, Option[] option, int numDoors){
         super(manufacturerName, numMiles, price, numSeats, option, numDoors);
@@ -12,6 +12,6 @@ public class ElectricCar extends Car {
     }
 
     public void chargeUp() {
-        batteryCharge++;
+        batteryCharge = 100;
     }
 }

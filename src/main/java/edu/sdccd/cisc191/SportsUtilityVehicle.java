@@ -2,7 +2,7 @@ package edu.sdccd.cisc191;
 
 public class SportsUtilityVehicle extends Vehicle {
 
-    private int towWeight;
+    int towWeight;
 
     public SportsUtilityVehicle(String manufacturerName, int numMiles, int price, int numSeats, Option[] option, int towWeight) {
         super(manufacturerName, numMiles, price, numSeats, option);

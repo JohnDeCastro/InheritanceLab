@@ -1,8 +1,8 @@
 package edu.sdccd.cisc191;
 
-public class GasCar extends Car {
+public class GasCar extends Car implements Combustible{
 
-    private int fuelLevel = 0;
+    int fuelLevel = 0;
 
 
     public GasCar(String manufacturerName, int numMiles, int price, int numSeats, Option[] option, int numDoors){
@@ -17,6 +17,6 @@ public class GasCar extends Car {
     }
 
     public void tankUp() {
-        fuelLevel++;
+        fuelLevel = 100;
     }
 }

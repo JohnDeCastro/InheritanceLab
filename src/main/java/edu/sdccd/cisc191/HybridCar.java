@@ -1,9 +1,9 @@
 package edu.sdccd.cisc191;
 
-public class HybridCar extends Car {
+public class HybridCar extends Car implements Combustible, Chargeable{
 
-    private int batteryCharge = 0;
-    private int fuelLevel = 0;
+    int batteryCharge = 0;
+    int fuelLevel = 0;
 
     public HybridCar(String manufacturerName, int numMiles, int price, int numSeats,Option [] option, int numDoors){
         super(manufacturerName, numMiles, price, numSeats, option, numDoors);
@@ -17,7 +17,7 @@ public class HybridCar extends Car {
     }
 
     public void tankUp() {
-        fuelLevel++;
+        fuelLevel = 100;
     }
 
     public int getBatteryCharge() {
@@ -25,6 +25,6 @@ public class HybridCar extends Car {
     }
 
     public void chargeUp() {
-        batteryCharge++;
+        batteryCharge = 100;
     }
 }

@@ -79,7 +79,7 @@ class TestObjectOrientedDesign
         assertEquals(4, car.getNumberOfSeats());
         assertEquals(2, car.getNumberOfDoors());
     }
-/*
+
     @Test
     void testCarIsCombustible()
     {
@@ -90,7 +90,6 @@ class TestObjectOrientedDesign
         car.tankUp();
         assertEquals(100, car.getFuelLevel());
     }
- */
 
     @Test
     void testElectricCar()
@@ -103,7 +102,7 @@ class TestObjectOrientedDesign
         assertEquals(4, car.getNumberOfSeats());
         assertEquals(2, car.getNumberOfDoors());
     }
-/*
+
     @Test
     void testCarIsChargeable()
     {
@@ -114,7 +113,6 @@ class TestObjectOrientedDesign
         car.chargeUp();
         assertEquals(100, car.getBatteryCharge());
     }
- */
 
     @Test
     void testHybridCar()
@@ -127,7 +125,7 @@ class TestObjectOrientedDesign
         assertEquals(4, car.getNumberOfSeats());
         assertEquals(2, car.getNumberOfDoors());
     }
-/*
+
     @Test
     void testHybridCarIsCombustibleAndChargeable()
     {
@@ -142,7 +140,5 @@ class TestObjectOrientedDesign
         Chargeable chargeable = car;
         assertEquals(100, chargeable.getBatteryCharge());
     }
-
- */
 
 }
